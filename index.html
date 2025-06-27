@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game || Ali Ahmed</title>
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+<!-- Basic SEO -->
+<meta name="description" content="Your site description here.">
+<meta name="keywords" content="Web Developer, Portfolio, Projects, HTML, CSS, JavaScript, PHP, Laravel">
+<meta name="author" content="Ali Ahmed">
+
+<!-- Open Graph for Facebook & Discord -->
+<meta property="og:title" content="Memory Game || Ali Ahmed">
+<meta property="og:description" content="Short description that appears on Discord and Facebook.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="imgs/medialogo.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Memory Game || Ali Ahmed">
+<meta name="twitter:description" content="Short description for Twitter preview.">
+<meta name="twitter:image" content="imgs/medialogo.png">
+<meta name="twitter:site" content="@3vli">
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <div class="control-buttons">
+        <button><span class="text">Start Play</span><span>LetsGo!</span></button>
+    </div>
+    <div class="info-container">
+        <div class="game-info">
+            <div class="names">
+                Hello: <span id=""></span>
+            </div>
+            <div class="tries">
+                wrong Tries: <span class="number">0</span>
+            </div>
+            <div class="timer">
+                timer: <span class="number">0</span>
+            </div>
+            <div class="restart-buttons hidden">
+                <span class="restart">Restart</span>
+                <span class="exit">Exit</span>
+            </div>
+        </div>
+            <div class="dev-info">
+                <div class="ali-info">
+                    <p>this app created by Ali Ahmed</p>
+                    <p>iam web dev fullstack</p>
+                </div>
+                <div class="card">
+                    <span>Social</span>
+                  
+                    <!-- Instagram -->
+                    <a class="social-link" href="#" title="Instagram">
+                        <svg fill="#b11e78" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="40" height="40">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 
+                                   114.9-51.3 114.9-114.9S287.6 141 224.1 141zm0 186.6c-39.6 
+                                   0-71.7-32.1-71.7-71.7s32.1-71.7 71.7-71.7 71.7 32.1 
+                                   71.7 71.7-32.1 71.7-71.7 71.7zm146.4-194.3c0 
+                                   14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 
+                                   12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 
+                                   27.2c-1.7-35.7-9.9-67.3-36.2-93.5S385.7 
+                                   7.6 350 5.9c-35.7-1.7-142.9-1.7-178.6 
+                                   0C135.7 7.6 104.1 15.8 77.8 42S7.6 96.3 
+                                   5.9 132c-1.7 35.7-1.7 142.9 0 178.6 
+                                   1.7 35.7 9.9 67.3 36.2 93.5s57.8 
+                                   34.5 93.5 36.2c35.7 1.7 142.9 
+                                   1.7 178.6 0 35.7-1.7 67.3-9.9 
+                                   93.5-36.2s34.5-57.8 36.2-93.5c1.7-35.7 
+                                   1.7-142.9 0-178.6zM398.8 388c-7.8 
+                                   19.6-22.9 34.7-42.6 42.6-29.5 
+                                   11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+                                   9-132.1c7.8-19.6 22.9-34.7 
+                                   42.6-42.6 29.5-11.7 99.5-9 
+                                   132.1-9s102.7-2.6 132.1 
+                                   9c19.6 7.8 34.7 22.9 42.6 
+                                   42.6 11.7 29.5 9 99.5 9 
+                                   132.1s2.6 102.7-9 132.1z"/>
+                        </svg>
+                      </a>
+                      
+                      
+                  
+                    <!-- Discord -->
+                    <a class="social-link" href="#" title="Discord">
+                      <svg viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg" fill="#5865F2">
+                        <path d="M216.856,16.597c-16.571-7.754-34.29-13.389-52.814-16.598
+                          c-2.275,4.113-4.933,9.645-6.766,14.046c-19.692-2.961-39.203-2.961-58.533,0c-1.832-4.401-4.551-9.933-6.846-14.046
+                          c-18.544,3.209-36.283,8.864-52.854,16.638C5.618,67.147-3.443,116.401,1.087,164.956c22.169,16.555,43.653,26.612,64.775,33.193
+                          c5.215-7.178,9.866-14.808,13.873-22.849c-7.631-2.899-14.94-6.477-21.846-10.631c1.832-1.358,3.624-2.777,5.356-4.237
+                          c42.122,19.702,87.89,19.702,129.509,0c1.752,1.46,3.544,2.879,5.356,4.237c-6.926,4.174-14.255,7.753-21.886,10.652
+                          c4.007,8.02,8.638,15.671,13.873,22.848c21.142-6.58,42.646-16.636,64.815-33.213C260.228,108.668,245.831,59.866,216.856,16.597z
+                           M85.474,135.095c-12.645,0-23.015-11.805-23.015-26.18s10.148-26.2,23.015-26.2c12.867,0,23.236,11.805,23.015,26.2
+                          C108.509,123.29,98.341,135.095,85.474,135.095z M170.525,135.095c-12.645,0-23.015-11.805-23.015-26.18s10.148-26.2,23.015-26.2
+                          c12.867,0,23.236,11.805,23.015,26.2C193.54,123.29,183.392,135.095,170.525,135.095z"/>
+                      </svg>
+                    </a>
+                  
+                    <!-- Twitter -->
+                    <a class="social-link" href="#" title="Twitter">
+                      <svg fill="#1DA1F2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M459.4,151.7c0.3,4.1,0.3,8.2,0.3,12.3c0,125.1-95.2,269.2-269.2,269.2
+                          c-53.5,0-103.2-15.7-145.1-42.7c7.4,0.9,14.8,1.2,22.5,1.2c44.4,0,85.2-15.1,117.5-40.5c-41.6-0.9-76.5-28.2-88.6-66
+                          c5.8,0.9,11.5,1.5,17.5,1.5c8.5,0,16.9-1.2,24.7-3.3c-43.4-8.7-76-47-76-93.2v-1.2c12.6,7,27.1,11.5,42.4,12
+                          c-25.1-16.8-41.6-45.4-41.6-77.9c0-17.1,4.5-33,12.3-46.8c45,55.2,112.3,91.4,188.3,95.2c-1.5-6.9-2.1-14.1-2.1-21.3
+                          c0-51.7,41.9-93.5,93.5-93.5c26.9,0,51.2,11.5,68.3,29.7c21.3-4.1,41.3-12,59.5-22.5c-7,21.9-21.9,40.5-41.6,52.2
+                          c19-2.1,37.2-7.4,54-15.1C496.3,126.4,478.9,140.5,459.4,151.7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  
+                  
+            </div>
+    </div>
+    <div class="game-container">
+       
+    </div>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <script src="src/main.js"></script>
+</body>
+</html>
